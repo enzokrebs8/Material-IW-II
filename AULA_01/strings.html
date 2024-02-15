@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Textos</title>
+</head>
+<body>
+    <script>
+
+        //OBTENDO O NOME DA PESSOA    
+
+        var nome = prompt('Digite seu nome: ')
+
+        //OBTENDO O NÚMERO DE CARACTÉRES 
+
+        console.log(nome.length)
+        var qnt = (nome.length) 
+        document.write(` ${qnt} `) 
+
+        alert('Seu nome tem : ' + qnt + 'letras')
+        console.log('Quantas letras tem seu nome: '+ qnt)
+        
+        //DEIXAR EM MAIÚSCULO
+        console.log(nome.toUpperCase())
+        var mai = (nome.toUpperCase())
+        document.write(`<p> ${mai} `+ '</p>') 
+
+        alert('Seu nome maiusculo : ' + mai )
+        console.log('Maiusculo: '+ mai)
+
+        //DEIXAR EM MINÚSCULO
+        console.log(nome.toLowerCase())
+        var min = (nome.toLowerCase())
+        document.write(`<p> ${min} `+'</p>') 
+
+        alert('Seu nome minusculo : ' + min)
+        console.log('Minusculo: '+ min)
+
+    </script>
+</body>
+</html>

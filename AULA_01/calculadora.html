@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JS</title>
+</head>
+<body>
+    <h1>Exibe Oprerações entre dois números</h1>
+    <script>
+    
+        var num1 = parseFloat(prompt("Digite um número: "))
+        console.log('Digitou: '+ num1)
+        console.log(typeof(num1))
+        
+        
+        var num2 = parseFloat(prompt("Digite o segundo número: "))
+        console.log('Digitou: '+ num2)
+        console.log(typeof(num2))
+
+        var soma = num1+num2
+        /* alert('A soma dos dois número é igual a: '+ soma)
+        console.log('Resultado da soma: '+ soma)
+        console.log(typeof(soma)) */
+        
+        var subt = num1-num2
+        /* alert('A subtração dos dois número é igual a: '+ subt)
+        console.log('Resultado da soma: '+ subt)
+        console.log(typeof(subtracao)) */
+
+        var mult = num1*num2
+        /* alert('A multiplicação dos dois número é igual a: '+ mult)
+        console.log('Resultado da multiplicação: '+ mult)
+        console.log(typeof(mult)) */
+
+        var divi = num1/num2
+        
+
+        document.writeln('<p>O primeiro número que você digitou foi ' + num1 + '</p>')
+        document.writeln('<p>O segundo número que você digitou foi ' + num2 + '</p>')
+        document.write('<br>')
+
+        //INTERPOLAÇÃO DE VALORES - TEMPLATE STRING 
+
+        document.write(` Num1 = ${num1} e Num2 = ${num2} `)
+        document.write('<br>')
+        document.write(`A soma de ${num1} com ${num2} é ${soma} <br>`)
+        document.write(`A subtração de ${num1} com ${num2} é ${subt} <br>`)
+        document.write(`A multiplicação de ${num1} com ${num2} é ${mult} <br>`)
+        document.write(`A divisão de ${num1} com ${num2} é ${divi} <br>`)
+
+        
+    </script>
+    
+</body>
+</html>
