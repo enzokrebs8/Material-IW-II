@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 03 - CALCULADORA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Exemplo Valor do Input</h1>
+        Digite seu nome:
+        <input id="nome" name="nome" value="" type="text">
+        <button id="botao" onclick="pegaNome()">Clique aqui</button>
+        <p id="resultado">Aqui vai aparecer seu nome</p>
+        <script src="js/executa.js"></script>
+        <div>
+            <h1>CALCULADORA</h1>
+            <p>Digite o primeiro número: <input id="num1" value="" type="text"></p>
+            <p>Digite o primeiro número: <input id="num2" value="" type="text"></p>
+            <h2>Escolha a Oparação</h2>
+            <button onclick="somar()">Somar</button>
+            <button onclick="subt()">Subtrair</button>
+            <button onclick="multi()">Multiplicar</button>
+            <button onclick="divid()">Dividir</button>
+            <button onclick="limpar()">Limpar</button>
+            <h2>O resultado é: <span id="resul">0</span></h2>
+        </div>
+    </main>
+</body>
+
+</html>
