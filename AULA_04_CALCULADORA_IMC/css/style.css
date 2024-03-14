@@ -1,43 +1,46 @@
-body, header{
+body,
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(/AULA_04_CALCULADORA_IMC/img/1265937.jpg);
 }
 
-.container{
+.container {
     width: 70%;
     display: flex;
     padding: 1em;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    color: white; 
+    color: white;
     border-radius: 20px;
 }
 
-.valores{
+.valores {
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-h1{
+h1 {
     color: greenyellow;
 }
 
-span{
+span {
     font-size: 60px;
 }
 
-input{
+input {
     width: 70%;
     margin: 10px;
 }
 
-/* input ::-webkit-slider-thumb, input::-moz-range-thumb, input::-ms-thumb {
+input::-webkit-slider-thumb,
+input::-moz-range-thumb,
+input::-ms-thumb {
     border-radius: 50%;
     border: 1px solid greenyellow;
     cursor: pointer;
@@ -45,9 +48,9 @@ input{
     width: 2em;
     background-color: greenyellow;
 
-} */
+}
 
-button{
+button {
     height: 3em;
     width: 70%;
     background-color: greenyellow;
@@ -57,7 +60,7 @@ button{
     margin: 1em;
 }
 
-select{
+select {
     height: 3em;
     width: 70%;
     background-color: greenyellow;
@@ -67,7 +70,7 @@ select{
     margin: 1em;
 }
 
-.btn_calcular{
+.btn_calcular {
     height: 3em;
     width: 70%;
     background-color: green;
