@@ -10,14 +10,33 @@
 </head>
 
 <body>
-    <main>
-        <h1>CALCULADORA IMC</h1>
-        <h2>Digite sua altura:</h2>
-        <input id="altura" name="altura" type="text">
-        <button id="botao" onclick="">Enviar informação</button>
-        
-    </main>
-
+    <div class="container">
+        <h1>CALCULADORA DE IMC</h1>
+        <div class="valores">
+            <h2>Indique sua altura em metros:</h2>
+            <input id="alt" type="range" min="0.50" max="2.50" step="0.01" oninput="myFunction(this.value)" />
+            <span id="currentValue">0</span>
+            <button id="botao" onclick="">Enviar informações</button>
+        </div>
+        <div class="valores">
+            <h2>Indique sua massa (peso) em quilogramas (kg):</h2>
+            <input id="peso" type="number" value="0" min="10" max="250" step="0.01"/>
+            <button class="stick" id="botao" onclick="chamarPeso()">Enviar informação</button>
+        </div>
+        <div class="valores">
+            <h2>Escolha o seu gênero:</h2>
+            <select id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+        <button class="btn_calcular" onclick="calcular(); taxaIMC();">Calcular IMC</button>
+        <h2>Seu IMC é:</h2>
+        <p id="result">0</p>
+        <h2>Diagnóstico:</h2>
+        <p id="diag">___________</p>
+        <button id="novo_calc" onclick="novoCalc()">Novo calculo</button>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
