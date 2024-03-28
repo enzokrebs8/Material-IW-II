@@ -26,7 +26,9 @@ section {
     margin: 0 auto;
 }
 
-h1, section, article {
+h1,
+section,
+article {
     margin-bottom: 1rem;
 }
 
@@ -37,7 +39,7 @@ h1, section, article {
 
 /* botoes */
 button {
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 8px;
     padding: 0.625rem;
     cursor: pointer;
@@ -72,6 +74,11 @@ button {
     color: #fff;
 }
 
+.rosa {
+    background: #ff00bb;
+    color: #fff;
+}
+
 .azul {
     background: #1a237e;
     color: #fff;
@@ -83,7 +90,10 @@ button {
     border-radius: 5px;
     padding: 0.625rem;
 }
+
 .amarelo {
     background: #ffc107;
-    color: #fff;
+    color: #000000;
 }
+
+.modos {}
